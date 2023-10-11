@@ -9,7 +9,13 @@ import { MailModule } from './app/mail/mail.module';
 import { KategoriModule } from './app/kategori/kategori.module';
 
 @Module({
-  imports: [TypeOrmModule.forRoot(typeOrmConfig), BookModule, AuthModule, MailModule, KategoriModule],
+  imports: [
+    TypeOrmModule.forRoot(typeOrmConfig),
+    BookModule,
+    AuthModule,
+    MailModule,
+    KategoriModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
